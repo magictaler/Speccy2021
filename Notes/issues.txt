@@ -1,0 +1,13 @@
++ 2021.08.30 WREN and register '_EN' signals always arrive at the same clock now so CDC issue has been solved for register writes, Control.SW_ENABLE fixed;
++ 2021.09.01 State machine for p_color_gen process. Doesn't fully work, the whole screen is painted in border color, fixed;
++ 2021.09.03 The picture is not broken anymore but there is a vertical scrolling effect, fixed;
++ 2021.09.04 Noise effect at four locations per scanline at points where FIFOs are read, visible only with scaling coefficient = 1, fixed;
++ 2021.09.05 Blank screen after changing scaling factor through a register write, fixed;
++ 2021.09.09 Changing border size doesn't work correctly, fixed;
++ 2021.09.17 sw_enable bit doesn't work when used along with changing resolutions, fixed;
+2021.09.26 Sometimes when changing resolution or scaling factor the controller stops producing the picture;
++ 2021.10.06 USB Host interrupts are not working, no host controller functionality in the USB driver, fixed;
++ 2021.10.17 TinyUSB doesn't seem to enumerate a device, fixed;
++ 2921.10.26 Currently PL project is in a broken state due to the zx_sound_top, fixed;
++ 2021.10.28 'Press any key' doesn't work in the Retroleum test ROM even though the keyboard test is fully passing, fixed;
++ 2021.11.06 AY music quality is bad, sounds like choking, maybe audio PWM is not working properly, fixed;

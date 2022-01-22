@@ -1,0 +1,9 @@
+//arch = zynq; split = false; format = BIN; zynq_key_store = efuse; key_part_name = xc7z020
+the_ROM_image:
+{
+    [bootloader]fsbl\Release\fsbl.elf
+    Speccy2021_hw_platform\speccy2021_top.bit
+    Speccy2021\Release\Speccy2021.elf
+    //[load = 0x8000000]..\..\ROMs\DiagROM.bin
+    [load = 0x8000000]..\..\ROMs\pentagon.rom
+}
